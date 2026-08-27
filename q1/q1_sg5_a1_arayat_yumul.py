@@ -16,4 +16,4 @@ for i in range(len(Names)):
     dmg = Hero_Damage[i]
     heros = Hero(health, name)
     heros.damage(dmg)
-input("Type to proceed: ")
+input("\nType anything to proceed: ")
