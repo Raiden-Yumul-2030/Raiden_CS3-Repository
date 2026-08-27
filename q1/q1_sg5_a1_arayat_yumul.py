@@ -14,6 +14,7 @@ class Hero:
 
 dmg_a = 10
 dmg_m = 0
-heros = Hero(dmg_a, dmg_m)
+heros = Hero(health, name, dmg_a, dmg_m)
 heros.damage_a(health, name, dmg_a)
 heros.damage_m(health, name, dmg_m)
+
