@@ -1,11 +1,21 @@
-class Sauce:
-     def __init__(self, sauce, taste):
+class Tusoktusok:
+     name = ""
+     sauce = None
+     def __init__(self, name):
+          self.name = name
+     def dip(self, sauce):
           self.sauce = sauce
-          self.taste = taste          
-  
-class Tusoktusok(Sauce):
-     def tasting(self):
-          print(f"You dip the Tusoktusok in {self.sauce}. It tastes {self.taste}")
+     def eat(self):
+          print("I ate", self.name, "with", self.sauce.name, "and it tastes", self.sauce.taste)
 
-Food = Tusoktusok("Vinegar", "Sour")
-Food.tasting()
+class Sauce:
+     name = ""
+     taste = ""
+     def __init__(self, name, taste):
+          self.name = name
+          self.taste = taste
+
+fishball = Tusoktusok("fishball")
+vinegar = Sauce("vinegar", "sour")
+fishball.dip(vinegar)
+fishball.eat()
