@@ -23,4 +23,6 @@ My codes (Q1)
 
 [Sample Code: Tusoktusok](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q1/q1_tusoktusok_arayat_yumul.py)
 
-[THE SUMMATIVE ASSESSMENT](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/commit/ec1403c3f97898217035d914c4e63ae9c083d1b5)
+[THE SUMMATIVE ASSESSMENT](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q1/q1_sa_arayat_yumul.py)
+
+[Summative Assessment SOLUTION](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q1/q1_sa-solution.py)
