@@ -27,7 +27,35 @@ class Bank:
     for a in self.__accounts:
       print(a)
 
+  def deposit(self):
+    print("Ready to deposit an amount")
+    amount = float(input("Enter amount to deposit: "))
+    acc_num = input("Enter account number: ")
+    for a in self.__accounts:
+      if a.number == acc_num:
+        a.deposit(amount)
+        print(a)
+  
+  def addInterest(self):
+    print("Adding interest to all savings accounts")
+    for a in self.__accounts:
+      if isinstance(a, SavingsAccount):
+        print("Interest added to account ", a.number)
+        a.addInterest()
+        print(a)
+  
+  def closeAccount(self):
+    print("Ready to close an account")
+    acc_num = input("Enter account number: ")
+    for a in self.__accounts:
+      if a.number == acc_num:
+        self.__accounts.remove(a)
+        del a
+        print("Account closed")
+  def __del__(self):
+    print("Thank you for banking with ", self.name)
 
+  
 
 class Account:
   name = ""
