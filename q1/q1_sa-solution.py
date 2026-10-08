@@ -1,6 +1,31 @@
 # this code was the solution to the summative assesment
 class Bank:
-  pass
+  name = ""
+  __accounts = []
+  
+  def __init__(self, name):
+    self.name = name
+    print("Welcome to ", self.name)
+
+  def openAccount(self):
+    print("Ready to open an account")
+    acc_name = input("Account name: ")
+    acc_num = input("Account number: ")
+    acc_type = input("Account type (savings or checking): ").lower()
+    
+    if acc_type == "savings":
+      account = SavingsAccount(acc_name, acc_num)
+    else:
+      account = Account(acc_name, acc_num)
+      
+    self.__accounts.append(account)
+    print("Account created")
+    print(account)
+
+  def showAccounts(self):
+    print("Showing accounts")
+    for a in self.__accounts:
+      print(a)
 
 
 
@@ -29,7 +54,7 @@ class Account:
     return self.name + " [" + self.number + "] P" + str(self.__balance)
     
   def __del__(self):
-    print("Account ",self.number," closed")
+    print("Account ", self.number, " closed")
 
 
 
@@ -39,19 +64,13 @@ class SavingsAccount(Account):
   def addInterest(self):
     interestToAdd = super().getBalance() * self.__interest
     super().deposit(interestToAdd)
-    
-  def testSavings(self):
-    print(super().getBalance())
 
 
-
-acc1 = Account("JMRI", "1234")
-acc1.deposit(500)
-acc1.withdraw(100)
-print(acc1)
-
-acc2 = SavingsAccount("EG", "4567")
-acc.deposit(400)
-acc.withdraw(200)
-acc2.addInterest()
-print(acc2)
+bank = Bank("Land Bank")
+bank.openAccount()
+bank.openAccount()
+bank.showAccounts()
+bank.deposit()
+bank.deposit()
+bank.addInterest()
+bank.closeAccount()
