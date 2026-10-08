@@ -1,11 +1,11 @@
-# this code was the solution to the summative assesment
+# This code was the solution to the summative assesment
 class Bank:
   name = ""
   __accounts = []
   
   def __init__(self, name):
     self.name = name
-    print("Welcome to ", self.name)
+    print("Welcome to", self.name)
 
   def openAccount(self):
     print("Ready to open an account")
@@ -40,7 +40,7 @@ class Bank:
     print("Adding interest to all savings accounts")
     for a in self.__accounts:
       if isinstance(a, SavingsAccount):
-        print("Interest added to account ", a.number)
+        print("Interest added to account", a.number)
         a.addInterest()
         print(a)
   
@@ -52,8 +52,12 @@ class Bank:
         self.__accounts.remove(a)
         del a
         print("Account closed")
+
   def __del__(self):
-    print("Thank you for banking with ", self.name)
+    print("Thank you for banking with", self.name)
+    for a in self.__accounts:
+      self.__accounts.remove(a)
+      del a
 
   
 
