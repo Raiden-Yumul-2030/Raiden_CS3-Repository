@@ -25,7 +25,7 @@ My Codes (Q1)
 
 My Codes (Q2)
 
-[]()
+[Library](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/fa1_arayat_yumul.py)
 
 
 My Codes (Q3)
