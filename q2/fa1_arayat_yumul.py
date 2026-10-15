@@ -13,7 +13,7 @@ class Publication:
   def set_author(self, author):
     self.__author = author
   def display_info(self):
-    print("")
+    print("Title: ", self.__title, "\nAuthor: ", self.__author)
 
 
 class Book(Publication):
@@ -51,8 +51,8 @@ pub1.display_info()
 print("\nBook Information:")
 book1.set_number_of_pages(-310)
 book1.display_info()
-print(book1.get_number_of_pages())
+print("Number of pages: ",book1.get_number_of_pages())
 
 print("\nMagazine Information:")
 mag1.display_info()
-print(mag1.get_issue_number())
+print("Issue number: ", mag1.get_issue_number())
