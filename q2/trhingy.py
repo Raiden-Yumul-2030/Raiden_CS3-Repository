@@ -37,6 +37,15 @@ class BStudent:
   @property
   def age(self):
     return "I am " + str(self.__age) + " years old"
+  @name.setter
+  def name(self, value):
+    self.__name = value
+  @age.setter
+  def age(self, value):
+    if value > 0:
+      self.__age = value
 
-Bs = BStudent("JM", 34)
+Bs = BStudent("JM", 30)
+Bs.name = "Sir Bern"
+Bs.age = 31
 print(Bs.name + Bs.age)
