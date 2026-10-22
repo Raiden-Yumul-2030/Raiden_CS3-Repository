@@ -1,4 +1,3 @@
-#oh hell naw :wilted_rose:
 class Patient:
   def __init__(self, name, bill_amount):
     self.__name = name
@@ -11,10 +10,33 @@ class Patient:
     return self.__bill_amount
   def set_bill_amount(self, bill_amount):
     self.__bill_amount = bill_amount
-  def calculate_bill(self)
+  def calculate_bill(self):
+    print("Hospital Billing System\n---------------------")
+    print("Patient name: ", self.__name)
+    print("Original bill: ₱", self.__bill_amount)
+    print("Final bill: ₱", self.__bill_amount * 1)
+    print("")
 
 class SeniorPatient(Patient):
-  pass
-
+  def calculate_bill(self):
+    print("Patient name: ", self._Patient__name)
+    print("Original bill: ₱", self._Patient__bill_amount)
+    print("Final bill: ₱", self._Patient__bill_amount * 0.8)
+    print("")
+    
 class PhilHealthPatient(Patient):
-  pass
+  def __init__(self, name, bill_amount):
+     super().__init__(name, bill_amount)
+  def calculate_bill(self):
+    print("Patient name: ", self._Patient__name)
+    print("Original bill: ₱", self._Patient__bill_amount)
+    print("Final bill: ₱", self._Patient__bill_amount * 0.85)
+    print("")
+
+np1 = Patient("Juan Dela Cruz", 15000)
+sp1 = SeniorPatient("Maria Santos", 15000)
+php1 = PhilHealthPatient("Pedro Reyes", 15000)
+
+np1.calculate_bill()
+sp1.calculate_bill()
+php1.calculate_bill()
