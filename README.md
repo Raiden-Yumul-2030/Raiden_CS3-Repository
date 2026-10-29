@@ -29,6 +29,8 @@ My Codes (Q2)
 
 [Hospital](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/fa2_arayat_yumul.py)
 
+[Hospital (Improved)](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/fa2-improved_arayat_yumul.py)
+
 
 My Codes (Q3)
 
