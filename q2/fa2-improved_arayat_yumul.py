@@ -3,11 +3,11 @@ class Patient:
     self._name = name
     self._bill_amount = bill_amount
   def get_name(self):
-    return self.__name
+    return self._name
   def set_name(self, name):
     self._name = name
   def get_bill_amount(self):
-    return self.__bill_amount
+    return self._bill_amount
   def set_bill_amount(self, bill_amount):
     self._bill_amount = bill_amount
   def calculate_bill(self):
