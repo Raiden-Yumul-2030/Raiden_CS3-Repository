@@ -11,6 +11,13 @@ class Payment:
   def __init__(self, amount):
     self.amount = amount
 
+class Ewallet(Payment):
+  def __init__(self, name, amount):
+    self.mode = name
+    self.amount = amount
+
 bill = Bill(1000)
-payment = Payment(1000)
+payment = Payment(900)
 bill.pay(payment)
+gcash = Ewallet("GCash", 100)
+bill.pay(gcash)
