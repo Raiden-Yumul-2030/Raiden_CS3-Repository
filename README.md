@@ -31,6 +31,8 @@ My Codes (Q2)
 
 [Hospital (Improved)](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/fa2-improved_arayat_yumul.py)
 
+[Sensors](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/FA3_Arayat_Yumul.py)
+
 
 My Codes (Q3)
 
@@ -57,6 +59,8 @@ Example Codes (Q2)
 [SG8 Examples](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/SG8examples.py)
 
 [SG11 Examples](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/SG11examples.py)
+
+[SG12 Examples](https://github.com/Raiden-Yumul-2030/Raiden_CS3-Repository/blob/main/q2/SG12examples.py)
 
 
 Example Codes (Q3)
