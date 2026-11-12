@@ -19,9 +19,9 @@ class TempSensor(Sensor):
     def __str__(self):
         return "[Temperature Sensor] Reading: " + self.get_reading() + "°C"
 
-tempSensor = TempSensor()
 pHSensor = PHSensor()
+tempSensor = TempSensor()
 print("--- Lab Inventory System ---")
-print(tempSensor)
 print(pHSensor)
+print(tempSensor)
 print("----------------------------")
